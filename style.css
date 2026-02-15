@@ -1,0 +1,86 @@
+/* OPĆI STIL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e295e0; /* promijeni pozadinu po želji */
+}
+
+/* NAVBAR / MENI */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #e996eb;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+nav.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav.menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav.menu a:hover {
+    color: #3615c6;
+}
+
+nav.menu i.fab {
+    font-size: 20px;
+}
+
+/* HERO / POČETNA */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #c205ac; /* promijeni pozadinu po želji */
+}
+
+/* SEKCIJE */
+section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+/* GALERIJA */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e481da;
+    margin-top: 40px;
+}
